@@ -12,7 +12,7 @@ ol
 .notHidden
 	display: none
 	@media(max-width:800px)
-		display: block
+		display: inline-block
 h3
 	font-size: 24px
 
@@ -36,6 +36,8 @@ body
 	background-size: cover
 	color: $w
 	padding-bottom: 163px
+	@media(max-width: 700px)
+		padding-bottom: 30px
 .mod
 	@media(max-width: 1020px)
 		margin: 0	auto 
@@ -85,7 +87,12 @@ body
 		top: 0
 		width: 100%
 		z-index: 3
-		
+ 
+
+		 
+		 	
+
+	
 .header
 	display: flex
 	-webkit-justify-content: space-between
@@ -98,10 +105,12 @@ body
 	padding-bottom: 166px
 	padding-left: 15px
 	padding-right: 15px
-	@media(max-width: 920px)
+	@media(max-width: 980px)
+		display: inline-flex
 		-webkit-flex-direction: column
 		-ms-flex-direction: column
 		flex-direction: column
+		 
 	&__logo
 		display: block
 		width: 137px
@@ -223,12 +232,32 @@ body
 			-webkit-border-radius: 3px 
 			border-radius: 3px 
 			text-align: center
+			margin: 0 auto
 			margin-top: 24px
 			padding: 11px 0 15px 0
 			letter-spacing: 0.7px 
 			-webkit-box-shadow: 0 -2px #adedbb inset 
 			box-shadow: 0 -2px #adedbb inset 
-
+.kek
+	position: relative
+	display: none
+	@media(max-width: 800px)
+		display: block		
+.mob__logo
+	display: block
+	width: 137px
+	height: 28px
+	position: absolute
+	top: -235px
+	left: 70%
+	@media(max-width: 500px)
+		left: 60%
+	@media(max-width: 400px)
+		left: 50%
+	 
+.lol
+	@media(max-width: 800px)
+		margin-top: -120px 
 .block-book
 	display: flex
 	-webkit-justify-content: flex-start
@@ -294,6 +323,7 @@ body
 		position: relative	
 		max-width: 356px	
 		margin: 35px auto 0
+		 
 	&__svg
 		position: absolute
 		z-index: -1 
@@ -302,10 +332,16 @@ body
 			width: 300px
 			height: 412px
 		@media(max-width: 650px)
+			width: 250px
+			height: 312px
 			margin-right: 15px	
 	&__svg--left
 		right: inherit
 		left: 0 
+		@media(max-width: 650px)
+			width: 250px
+			height: 312px
+			margin-left: -15px	
 	&__img
 		margin-top: 47px
 		margin-right: 44px
@@ -313,10 +349,17 @@ body
 			width: 300px
 		@media(max-width: 650px)
 			margin-right: 15px
+			width: 250px
+			height: 312px
+			 
 	&__img--left
 		margin-top: 49px
 		margin-left: 51px
 		margin-right: 0
+		@media(max-width: 650px)
+			width: 250px
+			height: 312px
+			margin-left: -15px	
 .block-counter
 	display: flex
 	-webkit-justify-content: space-around
@@ -326,6 +369,7 @@ body
 		-webkit-flex-direction: column
 		-ms-flex-direction: column
 		flex-direction: column
+		margin-top: 30px
 	p
 		font-family: $o
 		text-align: center
@@ -407,6 +451,7 @@ body
 			padding: 14px 45px
 			letter-spacing: 0.7px
 			margin-bottom: 18px		
+			
 	&-social
 		display: flex
 		-webkit-align-items: center
@@ -430,7 +475,9 @@ body
 					color: $a
 	h3
 		margin-bottom: 20px
-	
+.cent
+	@media(max-width: 980px)
+		text-align: center	
 .block-product
 	display: flex
 	-webkit-justify-content: space-around
@@ -514,6 +561,10 @@ body
 		max-width: 227px
 		padding: 13px 0
 		margin: 84px auto 0
+		@media(max-width: 800px)
+			margin-top: -20px
+			display: none
+
 .block-blog	
 	display: flex
 	-webkit-justify-content: space-between
@@ -525,6 +576,7 @@ body
 		flex-direction: column
 		max-width: 600px
 		margin: 85px auto 0
+		 
 			
 		
 	&-item
@@ -532,6 +584,7 @@ body
 		flex-basis: 32%	
 		@media(max-width: 920px)
 			margin-bottom: 40px
+			
 		
 	h4
 		font-size: 18px
@@ -586,6 +639,9 @@ body
 		padding: 13px 0
 		letter-spacing: 0.7px	
 		box-shadow: 0 -2px #adebbb inset 
+		@media(max-width: 1000px)
+			margin-top: 0px
+				
 		
 .block-letter
 	display: flex
@@ -775,6 +831,11 @@ body
 .hidden
 	@media(max-width: 800px)
 		display: none
+.hidden2
+	display: none
+	@media(max-width: 800px)
+		display: block
+		visibility: hidden
 
  
 

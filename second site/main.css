@@ -63,7 +63,7 @@ h1 {
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between; }
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     .box-header {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -138,7 +138,7 @@ h1 {
   color: #fff;
   border: 1px solid #ffffff;
   padding: 7px 19px; }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     .sign {
       display: none; } }
 
@@ -146,14 +146,24 @@ h1 {
   display: -webkit-box;
   display: flex;
   list-style-type: none; }
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     .nav {
       margin-top: 20px; } }
+  @media (max-width: 650px) {
+    .nav {
+      max-width: 450px; } }
   @media (max-width: 600px) {
     .nav {
       display: none !important; } }
   .nav-item {
     margin: 0 30px; }
+    @media (max-width: 700px) {
+      .nav-item {
+        margin: 0 15px; } }
+
+@media (max-width: 1100px) {
+  .footer-nav {
+    margin-top: 20px; } }
 
 .btn-group {
   margin-top: 50px;
@@ -247,6 +257,9 @@ h2 {
 .wrap-text {
   max-width: 350px;
   margin: 10px; }
+  @media (max-width: 610px) {
+    .wrap-text {
+      margin: 10px auto; } }
 
 .btn-third {
   text-transform: uppercase;
@@ -386,6 +399,15 @@ h2 {
   margin: 0 auto;
   box-shadow: 0px 2px 2px 1px rgba(227, 202, 227, 0.71);
   padding: 5px 20px 5px 20px; }
+  @media (max-width: 900px) {
+    .inbox {
+      max-width: 550px; } }
+  @media (max-width: 700px) {
+    .inbox {
+      max-width: 450px; } }
+  @media (max-width: 600px) {
+    .inbox {
+      max-width: 350px; } }
   @media (max-width: 500px) {
     .inbox {
       max-width: 250px; } }
@@ -471,6 +493,13 @@ h2 {
 
 .hidden {
   visibility: hidden; }
+
+.none {
+  display: none; }
+  @media (max-width: 600px) {
+    .none {
+      display: block;
+      margin: 0 auto; } }
 
 .says {
   font-family: 'Raleway', sans-serif;
@@ -829,7 +858,11 @@ footer {
     .block-footer {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-              flex-direction: column; } }
+              flex-direction: column;
+      -webkit-box-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+              align-items: center; } }
 
 .social-last {
   display: -moz-flex;
@@ -849,6 +882,9 @@ footer {
 .nav-footer {
   margin-right: -10px;
   margin-top: 0px; }
+  @media (max-width: 1100px) {
+    .nav-footer {
+      margin: 0 auto; } }
 
 .dot {
   height: 5px;
@@ -864,7 +900,7 @@ footer {
   display: -webkit-box;
   display: flex;
   justify-content: space-around; }
-  @media (max-width: 800px) {
+  @media (max-width: 1100px) {
     .wrap-menu {
       display: none; } }
   .wrap-menu li {
